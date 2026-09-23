@@ -9,13 +9,14 @@ function App() {
   const [liked, setLiked] = useState([])
 
   function addLikedTweet(tweet) {
-    console.log("called in appjsx");
-    console.log(liked)
     setLiked((prev) => [...prev, tweet])
+    console.log("called in appjsx");
+    // console.log(liked)
   }
 
   function removeLikedTweet(id) {
     setLiked((prev) => prev.filter((item) => item.id !== id))
+    console.log("called REMOVED");
   }
 
   return (
@@ -23,7 +24,7 @@ function App() {
       <SideBar />
       <main className="main-content">
         <Routes>
-          <Route path="/" element={<Home addLikedTweet={addLikedTweet} liked={liked} />}></Route>
+          <Route path="/" element={<Home addLikedTweet={addLikedTweet} removeLikedTweet={removeLikedTweet} liked={liked} />}></Route>
           <Route path="/liked" element={<Liked liked={liked} removeLikedTweet={removeLikedTweet} />}></Route>
         </Routes>
       </main>

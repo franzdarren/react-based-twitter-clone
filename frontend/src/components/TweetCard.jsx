@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { formatDate } from '../utils/formatDate'
 import './TweetCard.css'
 
-export default function TweetCard({ tweet, addLikedTweet }) {
+export default function TweetCard({ tweet, addLikedTweet, removeLikedTweet }) {
     const [liked, setLiked] = useState(false);
     const [retweeted, setRetweeted] = useState(false);
 
@@ -36,7 +36,7 @@ export default function TweetCard({ tweet, addLikedTweet }) {
                     <span onClick={()=> {
                         if (liked) {
                             setLiked(false);
-                            addLikedTweet(tweet, false);
+                            removeLikedTweet(tweet.id);
                         } else {
                             setLiked(true);
                             addLikedTweet(tweet, true);
