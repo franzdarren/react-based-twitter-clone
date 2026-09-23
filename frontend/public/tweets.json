@@ -1,0 +1,144 @@
+{
+  "tweets": [
+    {
+      "id": "t001",
+      "author": { "name": "Frieren", "handle": "frierenbeyond", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=frierenbeyond", "verified": true },
+      "content": "spent 80 years learning a spell that makes flowers bloom slightly faster. worth it.",
+      "createdAt": "2026-09-23T08:41:00Z",
+      "likes": 14203, "retweets": 3891, "replies": 402, "image": null
+    },
+    {
+      "id": "t002",
+      "author": { "name": "dev in denial", "handle": "npmruncry", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=npmruncry", "verified": false },
+      "content": "fixed the bug. do not ask me how. do not ask me what it was. we do not speak of it.",
+      "createdAt": "2026-09-23T07:12:00Z",
+      "likes": 8821, "retweets": 2104, "replies": 187, "image": null
+    },
+    {
+      "id": "t003",
+      "author": { "name": "Blue Lock Daily", "handle": "bluelockdaily", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=bluelockdaily", "verified": true },
+      "content": "new episode drops in 3 hours. if you spoil it i will find you. i have the technology.",
+      "createdAt": "2026-09-23T06:55:00Z",
+      "likes": 5530, "retweets": 1244, "replies": 330, "image": "/images/bluelock.svg"
+    },
+    {
+      "id": "t004",
+      "author": { "name": "Mira", "handle": "miracodes", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=miracodes", "verified": false },
+      "content": "hot take: useEffect is not hard. you are just doing three things in it that should be zero things.",
+      "createdAt": "2026-09-23T05:30:00Z",
+      "likes": 21044, "retweets": 6702, "replies": 1893, "image": null
+    },
+    {
+      "id": "t005",
+      "author": { "name": "CSS Wizard", "handle": "flexboxgoblin", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=flexboxgoblin", "verified": true },
+      "content": "centered a div on the first try today. i do not know what i did. i am afraid to refresh.",
+      "createdAt": "2026-09-23T04:18:00Z",
+      "likes": 33921, "retweets": 11203, "replies": 842, "image": null
+    },
+    {
+      "id": "t006",
+      "author": { "name": "Anime Screencaps", "handle": "framesofanime", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=framesofanime", "verified": false },
+      "content": "no context frame. rate the composition.",
+      "createdAt": "2026-09-23T03:02:00Z",
+      "likes": 9210, "retweets": 2011, "replies": 156, "image": "/images/frame.svg"
+    },
+    {
+      "id": "t007",
+      "author": { "name": "Darren", "handle": "franzdarren", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=franzdarren", "verified": false },
+      "content": "been up 24 hours building a react app at work while pretending to study. this is fine.",
+      "createdAt": "2026-09-23T02:44:00Z",
+      "likes": 412, "retweets": 38, "replies": 61, "image": null
+    },
+    {
+      "id": "t008",
+      "author": { "name": "API Status Bot", "handle": "apidownbot", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=apidownbot", "verified": true },
+      "content": "ALERT: upstream returning 504 on all uncached endpoints. cached responses still serving. we are aware.",
+      "createdAt": "2026-09-23T01:30:00Z",
+      "likes": 88, "retweets": 214, "replies": 501, "image": null
+    },
+    {
+      "id": "t009",
+      "author": { "name": "Ramen Enjoyer", "handle": "brothpilled", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=brothpilled", "verified": false },
+      "content": "tonkotsu at 2am is not a meal it is a personality trait and i am thriving",
+      "createdAt": "2026-09-22T23:15:00Z",
+      "likes": 6733, "retweets": 1502, "replies": 289, "image": "/images/ramen.svg"
+    },
+    {
+      "id": "t010",
+      "author": { "name": "Mira", "handle": "miracodes", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=miracodes", "verified": false },
+      "content": "your state is in the wrong component. that is the whole bug. that is always the whole bug.",
+      "createdAt": "2026-09-22T21:40:00Z",
+      "likes": 15320, "retweets": 4881, "replies": 623, "image": null
+    },
+    {
+      "id": "t011",
+      "author": { "name": "AOT Rewatch", "handle": "rumblingdaily", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=rumblingdaily", "verified": false },
+      "content": "rewatching season 1 knowing everything hits so different. every line is foreshadowing. every single one.",
+      "createdAt": "2026-09-22T20:05:00Z",
+      "likes": 11840, "retweets": 3320, "replies": 774, "image": null
+    },
+    {
+      "id": "t012",
+      "author": { "name": "git blame", "handle": "gitblameu", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=gitblameu", "verified": true },
+      "content": "ran git blame on the worst function in the codebase. it was me. 8 months ago. commit message: asd",
+      "createdAt": "2026-09-22T18:22:00Z",
+      "likes": 42103, "retweets": 15992, "replies": 1204, "image": null
+    },
+    {
+      "id": "t013",
+      "author": { "name": "Seasonal Watcher", "handle": "coursaison", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=coursaison", "verified": false },
+      "content": "added 14 shows to my watchlist this season. watched 0. the backlog is a lifestyle not a problem.",
+      "createdAt": "2026-09-22T16:47:00Z",
+      "likes": 7602, "retweets": 2213, "replies": 418, "image": null
+    },
+    {
+      "id": "t014",
+      "author": { "name": "Kai", "handle": "kaibuilds", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=kaibuilds", "verified": false },
+      "content": "shipped a dashboard with fake json data and honestly it feels better than half the real products i pay for",
+      "createdAt": "2026-09-22T15:10:00Z",
+      "likes": 3391, "retweets": 702, "replies": 94, "image": "/images/dashboard.svg"
+    },
+    {
+      "id": "t015",
+      "author": { "name": "Frieren", "handle": "frierenbeyond", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=frierenbeyond", "verified": true },
+      "content": "humans are always in such a hurry. you have like 80 years. that is a tuesday.",
+      "createdAt": "2026-09-22T13:33:00Z",
+      "likes": 28109, "retweets": 9204, "replies": 1102, "image": null
+    },
+    {
+      "id": "t016",
+      "author": { "name": "localhost 5173", "handle": "viteenjoyer", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=viteenjoyer", "verified": false },
+      "content": "hot module reload is the only functioning relationship in my life",
+      "createdAt": "2026-09-22T11:58:00Z",
+      "likes": 9944, "retweets": 3012, "replies": 201, "image": null
+    },
+    {
+      "id": "t017",
+      "author": { "name": "Recs Account", "handle": "animerecs", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=animerecs", "verified": true },
+      "content": "if you liked Steins Gate watch: Erased, Re Zero, Summertime Render. that is the whole thread. no engagement bait.",
+      "createdAt": "2026-09-22T10:20:00Z",
+      "likes": 18420, "retweets": 7733, "replies": 902, "image": null
+    },
+    {
+      "id": "t018",
+      "author": { "name": "dev in denial", "handle": "npmruncry", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=npmruncry", "verified": false },
+      "content": "too many re-renders. react limits the number of renders to prevent an infinite loop. anyway good morning",
+      "createdAt": "2026-09-22T08:05:00Z",
+      "likes": 12003, "retweets": 4410, "replies": 388, "image": null
+    },
+    {
+      "id": "t019",
+      "author": { "name": "Nari", "handle": "naridraws", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=naridraws", "verified": false },
+      "content": "drew this at 3am instead of sleeping. sleep is for people without a drawing tablet.",
+      "createdAt": "2026-09-22T06:41:00Z",
+      "likes": 25330, "retweets": 8120, "replies": 640, "image": "/images/artwork.svg"
+    },
+    {
+      "id": "t020",
+      "author": { "name": "Tech Layoff Watch", "handle": "layoffwatch", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=layoffwatch", "verified": true },
+      "content": "reminder that your worth is not your job title and also please back up your side projects to github tonight",
+      "createdAt": "2026-09-22T04:12:00Z",
+      "likes": 30188, "retweets": 12044, "replies": 1533, "image": null
+    }
+  ]
+}

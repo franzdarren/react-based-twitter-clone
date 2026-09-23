@@ -1,0 +1,170 @@
+/* ---------- card ---------- */
+.tweet-card {
+    display: flex;
+    align-items: flex-start;    /* avatar pins to the top, never stretches */
+    gap: 12px;
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto 14px auto;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #e4e7eb;
+    border-radius: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;     /* padding counts inside max-width, so all cards match */
+    text-align: left;           /* cancels the inherited centering from #root in index.css */
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    transition: background 0.15s ease;
+}
+
+.tweet-card:hover {
+    background: #fbfcfd;
+}
+
+/* ---------- avatar ---------- */
+.avatar {
+    flex-shrink: 0;             /* never squashes when text is long */
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #eceff2;
+    object-fit: cover;
+}
+
+/* ---------- body ---------- */
+.tweet-body {
+    flex: 1;
+    min-width: 0;               /* lets children truncate instead of overflowing */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- header: identity on the left, time hard-right ---------- */
+.tweet-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 4px;
+    white-space: nowrap;        /* header stays on one line, always */
+}
+
+.identity {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    min-width: 0;               /* required for the ellipsis below to work */
+    overflow: hidden;
+}
+
+.name {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0f1419;
+    overflow: hidden;
+    text-overflow: ellipsis;    /* long names get cut, not wrapped */
+}
+
+.verified {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #1d9bf0;
+    color: #ffffff;
+    font-size: 0.62rem;
+    font-weight: 700;
+    line-height: 1;
+    transform: translateY(2px);  /* optically centers it against the baseline */
+}
+
+.handle {
+    font-size: 0.87rem;
+    color: #6b7785;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.created-at {
+    flex-shrink: 0;             /* the time never gets squeezed or wrapped */
+    font-size: 0.78rem;
+    color: #6b7785;
+    font-variant-numeric: tabular-nums;   /* digits share one width, so times line up */
+}
+
+/* ---------- content ---------- */
+.content {
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #0f1419;
+    overflow-wrap: break-word;
+}
+
+/* ---------- media ---------- */
+/* The wrapper always exists but collapses to zero height when there is no
+   image, so cards with and without images share the same rhythm. */
+.tweet-media:not(:empty) {
+    margin: 0 0 12px 0;
+}
+
+.tweet-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;       /* every image occupies identical space */
+    object-fit: cover;
+    border: 1px solid #e4e7eb;
+    border-radius: 12px;
+    background: #eceff2;
+}
+
+/* ---------- stats ---------- */
+.tweet-stats {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;           /* pins the row to the bottom of the card */
+    padding-top: 2px;
+}
+
+.stat {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 78px;            /* the three columns align across every card */
+    padding: 4px 6px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    line-height: 1;
+    color: #6b7785;
+    cursor: pointer;
+    font-variant-numeric: tabular-nums;
+    transition: color 0.15s ease, background 0.15s ease;
+}
+
+.stat__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;                /* fixed icon box = numbers start at the same x */
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.stat--reply:hover {
+    color: #1d9bf0;
+    background: #e8f5fe;
+}
+
+.stat--retweet:hover {
+    color: #00ba7c;
+    background: #e5f7f0;
+}
+
+.stat--like:hover {
+    color: #f91880;
+    background: #fdeaf3;
+}
