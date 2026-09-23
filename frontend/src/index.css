@@ -109,3 +109,20 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* ---------- app layout: sidebar on the left, feed on the right ---------- */
+.app-layout {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;                /* feed takes all the space the sidebar doesn't */
+  min-width: 0;           /* lets it shrink below its content's width instead of overflowing */
+  padding: 20px 16px;
+}
+
+@media (max-width: 700px) {
+  .app-layout {
+    flex-direction: column;
+  }
+}

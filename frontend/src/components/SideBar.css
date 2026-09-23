@@ -1,0 +1,68 @@
+/* ---------- sidebar column ---------- */
+.navbar {
+    position: sticky;           /* stays in view while the feed scrolls */
+    top: 0;
+    align-self: flex-start;     /* without this, the flex parent stretches it and sticky does nothing */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 240px;
+    flex-shrink: 0;             /* the feed can't squeeze it narrower */
+    height: 100svh;
+    padding: 20px 16px;
+    border-right: 1px solid var(--border);
+    box-sizing: border-box;
+    text-align: left;           /* cancels the inherited centering from #root in index.css */
+}
+
+/* ---------- brand ---------- */
+.navbar-brand a {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-h);
+    text-decoration: none;
+}
+
+/* ---------- links ---------- */
+.navbar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nav-link {
+    padding: 10px 14px;
+    border-radius: 999px;       /* pill shape on hover, like Twitter */
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-h);
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-link:hover {
+    background: var(--accent-bg);
+    color: var(--accent);
+}
+
+/* ---------- small screens: sidebar becomes a top bar ---------- */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        padding: 10px 12px;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        background: var(--bg);  /* so the feed doesn't show through while it's sticky */
+        z-index: 1;
+    }
+
+    .navbar-links {
+        flex-direction: row;
+    }
+}

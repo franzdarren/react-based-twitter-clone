@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { formatDate } from '../utils/formatDate'
 import './TweetCard.css'
 
-export default function TweetCard({ tweet }) {
+export default function TweetCard({ tweet, addLikedTweet }) {
     const [liked, setLiked] = useState(false);
     const [retweeted, setRetweeted] = useState(false);
 
@@ -33,7 +33,15 @@ export default function TweetCard({ tweet }) {
                 <div className='tweet-stats'>
                     <span className='stat stat--reply'><span className='stat__icon'>🗨</span>{tweet.replies}</span>
                     <span className='stat stat--retweet'><span className='stat__icon'>RT</span>{tweet.retweets}</span>
-                    <span onClick={()=> liked ? setLiked(false) : setLiked(true)} className='stat stat--like'><span className='stat__icon'>♥</span>{liked ? tweet.likes+1 : tweet.likes}</span>
+                    <span onClick={()=> {
+                        if (liked) {
+                            setLiked(false);
+                            addLikedTweet(tweet, false);
+                        } else {
+                            setLiked(true);
+                            addLikedTweet(tweet, true);
+                        }
+                    }} className='stat stat--like'><span className='stat__icon'>♥</span>{liked ? tweet.likes+1 : tweet.likes}</span>
                 </div>
             </div>
         </div>
