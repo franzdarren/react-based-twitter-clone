@@ -23,9 +23,9 @@ export default function Home({ addLikedTweet, removeLikedTweet, liked }) {
                 <TweetCard
                     key={tweet.id}
                     tweet={tweet} 
+                    isLiked={liked.some((t) => t.id === tweet.id)}
                     addLikedTweet={addLikedTweet} 
                     removeLikedTweet={removeLikedTweet} 
-                    
                 />
             )}
         </>
